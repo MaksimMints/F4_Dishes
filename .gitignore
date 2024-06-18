@@ -130,3 +130,7 @@ dist
 .pnp.*
 
 .venv
+
+.build
+
+.node_modules
