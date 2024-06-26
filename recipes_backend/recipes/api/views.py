@@ -7,12 +7,12 @@ from rest_framework.decorators import api_view
 
 class Recipe_view(ReadOnlyModelViewSet):
     queryset = Dishes.objects.all()
-    print(queryset)
+    #print(queryset)
     serializer_class = RecipeSerializer
 
 
 class Categories_view(ReadOnlyModelViewSet):
-    queryset = Dishes.objects.values('categoryType').distinct()  # Извлечение уникальных значений поля
+    queryset = Dishes.objects.values('categoryType').distinct()
     serializer_class = CategoriesSerializer
 
 

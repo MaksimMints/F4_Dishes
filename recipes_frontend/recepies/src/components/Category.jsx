@@ -14,6 +14,7 @@ function Category() {
         axios.get(`http://127.0.0.1:8000/api/dishes/?category=${category}`).then(res => {
             setDishes(res.data);
             setLoading(false);
+            
         });
     }, []);
 
@@ -23,6 +24,7 @@ function Category() {
     }
 
     return (
+
         <div>
             <h1>{category}:</h1>
             <div className='recipe'>
