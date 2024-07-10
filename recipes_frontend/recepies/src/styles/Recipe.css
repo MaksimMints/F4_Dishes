@@ -1,0 +1,12 @@
+.recipe {
+padding: 15px 45px;
+padding-right: 35%;
+}
+
+@media (max-width: 900px) {
+
+    .recipe {
+      padding: 15px 45px;
+    
+    }  
+}

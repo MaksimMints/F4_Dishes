@@ -1,5 +1,4 @@
 
-
 h1 {
   text-align: center;
   color: black;
@@ -47,42 +46,32 @@ div .button {
 
 }
 
-a {
-  font-size: 1.2em;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-.s {
-  border: none;
-  margin: 10px 10px;
-  padding: 10px 15px;
-  line-height: 28px;
-  border-radius: 9px;
-  font-size: 1.2em;
-  color: black;
-  background: rgb(219, 219, 219);
-  transition: 0.3s;
-}
-
-.r {
-  border: none;
-  margin: 5px 10px;
-  padding: 5px 15px;
-  line-height: 28px;
-  border-radius: 9px;
-  font-size: 1.2em;
-  color: black;
-  background: rgb(219, 219, 219);
-  transition: 0.3s;
-}
 body {
 background-image: url('../media/background.jpg');
 background-position-x: left;
 background-size: 100%;
 background-repeat: no-repeat;
+background-attachment:fixed;
 
 }
+
+@media (max-width: 900px) {
+  body {
+    background-image: url('../media/background_vert_1.png');
+    background-position-x: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+  }
+
+  .recipe {
+    padding: 15px 45px;
+    font-size: 0.8em;
+  
+  }  
+}
+
 .recipe {
   padding: 15px 45px;
+  padding-right: 35%;
 }
